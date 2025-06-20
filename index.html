@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Derick Ogutu Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Derick Ogutu</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Derick Ogutu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.jpg"
+          alt="Derick Ogutu's profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Derick Ogutu</h1>
+        <p class="section__text__p2">Electrical and Electronics Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/GENERAL-CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/derick-ogutu'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/mypin99'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+             I’m an Electrical and Electronics Engineer with a strong background in embedded systems, PCB design, 
+             and software development. I hold a degree from Egerton University and have completed software engineering
+             programs with ALX Africa and Power Learn Project. 
+             I specialize in STM32/ESP32 development, circuit design, automation, and full-stack web technologies. 
+             With hands-on experience from Kenya Power, Unibrain Industries, and Data Integrated Ltd, 
+             I bring a well-rounded skill set for solving complex technical problems and building real-world solutions 
+             that bridge hardware and software.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Embedded Hardware Engineer <br>Data Integrated Ltd.</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>GPS, GSM & Speed Limiters Installation and Wiring</h4>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Firmware Developement and Upgrade</h4>
+                </div>
+              </article>
+               <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Electrical Schematic & PCB design and Troubleshooting</h4>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Electrical Intern <br> Unibrain Industries</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Supported maintenance of motors, circuits, and control panels</h4>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Installation and handling electrical faults in the workshop </h4>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Repair work of factory machinery and electrical equipment </h4>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Attachee – Electrical Power Systems<br>Kenya Power</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Power distribution networks, Routine transformer maintenance</h4>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Design and Construction of new transmission lines </h4>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Telecommunication, Meter testing and standardization </h4>
+                </div>
+              </article>
+               <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h4>Underground cabling, Emergency Services and Customer Services </h4>
+                </div>
+              </article>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/STM32WB Bluetooth Capable 3D Viewer.png"
+                alt="STM32WB PCB"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Bluetooth-Enabled STM32WB Device
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/mypin99/EmbeddedHardware_STM32WB_PCB'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Mixed Signal PCB.png"
+                alt="Mixed Siganl PCB"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">STM32 Mixed-Signal Audio Analysis & Generation Board</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/mypin99/STM32_Basic-Embedded-Hardware-Projects/tree/main/Mixed%20Signal%20PCB%20Design'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/STM32F1 Breakout board.png"
+                alt="STM32F1 Breakout Board"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              STM32F1 Breakout Board
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/mypin99/STM32_Basic-Embedded-Hardware-Projects/tree/main/STM32F1%20Breakout%20Board'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/USB to UART PCB.png"
+                alt="USB to UART Bridge Converter PCB"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">USB to UART Bridge Converter – Enhanced with ESD Protection</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/mypin99/STM32_Basic-Embedded-Hardware-Projects/tree/main/USBtoUART%20Converter'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>PCB Design (KiCad, Altium)</li>
+        <li>Embedded Systems (STM32, ESP32, Arduino)</li>
+        <li>Microcontroller Programming: ArduinoIDE, STM32CubeIDE, Keil Uvision</li>
+        <li>Software Development (C/C++, Python, JavaScript)</li>
+        <li>Web Development (HTML, CSS, JS, React)</li>
+        <li>Instrumentation and Control</li>
+        <li>Automation Tools: Siemens S7, Rockwell Automation Studio 5000, AutoCad, Schneider Electric</li>
+        <li>Solar Power: Remote System Monitoring, Solar System Design</li>
+        <li>Electrical Installations and Maintenance</li>
+      </ul>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>BSc Electrical and Electronics Engineering</strong> - Egerton University</li>
+        <li><strong>Software Engineering</strong> - ALX Africa</li>
+        <li><strong>Software Developer</strong> - Power Learn Project (PLP)</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:clairenjugunaw@gmail.com"
+              >ogutuderick4@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/derick-ogutu"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Derick Ogutu. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
